@@ -507,9 +507,9 @@ namespace TrueSync
             return FP.Acos(a.normalized * b.normalized) * FP.Rad2Deg;
         }
 
-        public static TSVector2 Rotate(TSVector2 a, FP degress)
+        public static TSVector2 Rotate(TSVector2 a, FP deg)
         {
-            var rad = TSMath.Deg2Rad * degress;
+            var rad = TSMath.Deg2Rad * deg;
             var cosa = TSMath.Cos(rad);
             var sina = TSMath.Sin(rad);
 
